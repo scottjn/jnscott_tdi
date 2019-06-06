@@ -76,3 +76,13 @@ All results stated are based on versions of datasets downloaded on May 30, 2019.
 csv file cotains records for medical providers with information such as the year they graduated with their highest degree, where they went to medical school, which medical practice(s) they are members 
 of, what hospitals they practice at, etc. The us_census_bureau_regions_and_divisions csv file bins states into geographical regions and divisions. The hcahps_hospital csv file contains scoes similar to 
 those being analyzed for the medical providers but instead for hospitals.
+
+# Insights Thus Far
+Investigation of the data is ongoing, but already a number of findings jump out, and many of these will be important in taking the project forward.
+
+1) **Not Normal**: The performance scores are not normally distributed, either taken overall, or considered in the majority of groupings explored thus far.
+2) **High Cardinality**: Prelimiary results from fitting a RandomForestRegressor and examining feature importance suggests that medical organization/hospital affiliation may be key factors in 
+determining score. This is an avenue that bears further exploration.
+3) **One More Number?**: A dataset which contains scores similar to those for individual medical providers exists. Those numbers could prove helpful in predicting a provider's scores. Membership in one 
+category, the medical school attended, for instance, might tend to push scores up while participation in a given medical organization might tend to pull scores down. Ratings of the medical organizations 
+themselves would elucidate that interaction.
