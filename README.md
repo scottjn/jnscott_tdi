@@ -26,7 +26,6 @@ Specifically, the objectives are as follows:
  - Affect a large number of patients
  - Involve a large number of practitioners
  - Suffer from particularly low scores 
- - Have 
 
 2) For measures identified, use machine learning tecniques to identify features of greatest importance in determining a provider's score.
 
